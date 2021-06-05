@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="400.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/10.0.2-internal" fx:controller="Controllers.UsersPage">
+    <children>
+        <Label layoutX="278.0" layoutY="14.0" text="Users">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Label>
+        <TableView fx:id="tableView" layoutX="186.0" layoutY="63.0" prefHeight="337.0" prefWidth="600.0"
+                   AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                   AnchorPane.topAnchor="63.0">
+            <columns>
+                <TableColumn fx:id="id" prefWidth="157.0" text="ID"/>
+                <TableColumn fx:id="name" prefWidth="246.0" text="Name"/>
+                <TableColumn fx:id="type" prefWidth="196.0" text="Type"/>
+            </columns>
+        </TableView>
+        <Button layoutX="537.0" layoutY="15.0" mnemonicParsing="false" onAction="#addUser" text="Add"/>
+    </children>
+</AnchorPane>

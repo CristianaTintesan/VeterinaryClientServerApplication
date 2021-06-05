@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="400.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/10.0.2-internal" fx:controller="Controllers.ConsultationsPage">
+    <children>
+        <Label layoutX="246.0" layoutY="14.0" text="Consultations">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Label>
+        <TableView fx:id="tableView" layoutX="180.0" layoutY="50.0" prefHeight="350.0" prefWidth="600.0"
+                   AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                   AnchorPane.topAnchor="50.0">
+            <columns>
+                <TableColumn fx:id="id" prefWidth="45.0" text="id"/>
+                <TableColumn fx:id="animalid" prefWidth="66.00001525878906" text="animal ID"/>
+                <TableColumn fx:id="animalname" prefWidth="106.0" text="animal name"/>
+                <TableColumn fx:id="ownerid" prefWidth="89.0" text="owner ID"/>
+                <TableColumn fx:id="ownername" prefWidth="138.0" text="owner Name"/>
+                <TableColumn fx:id="date" prefWidth="154.0" text="date"/>
+                <TableColumn fx:id="status" prefWidth="154.0" text="status"/>
+            </columns>
+        </TableView>
+        <Button fx:id="addButton" layoutX="534.0" layoutY="15.0" mnemonicParsing="false" onAction="#addConsultation"
+                text="Add"/>
+    </children>
+</AnchorPane>

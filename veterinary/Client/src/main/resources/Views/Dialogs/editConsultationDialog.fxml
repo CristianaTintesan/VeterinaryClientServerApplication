@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="200.0" prefWidth="466.0"
+            xmlns="http://javafx.com/javafx/10.0.2-internal" fx:controller="Controllers.Dialogs.EditConsultationDialog">
+    <children>
+        <Button layoutX="321.0" layoutY="161.0" mnemonicParsing="false" onAction="#cancelButtonClicked" text="Cancel"/>
+        <Button layoutX="384.0" layoutY="161.0" mnemonicParsing="false" onAction="#saveButtonClicked" text="Save"/>
+        <Label layoutX="188.0" layoutY="22.0" text="Edit consultation">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Label>
+        <Label layoutX="52.0" layoutY="45.0" text="Animal ID : "/>
+        <Label layoutX="52.0" layoutY="75.0" text="Status : "/>
+        <Label layoutX="52.0" layoutY="105.0" text="Date : "/>
+        <TextField fx:id="animal" layoutX="131.0" layoutY="50.0"/>
+        <ComboBox id="status" fx:id="status" layoutX="131.0" layoutY="75">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="Schedule"/>
+                    <String fx:value="Done"/>
+                    <String fx:value="In Progress"/>
+                </FXCollections>
+            </items>
+        </ComboBox>
+        <DatePicker fx:id="date" layoutX="131.0" layoutY="110.0"/>
+
+    </children>
+</AnchorPane>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="151.0" prefWidth="345.0"
+            xmlns="http://javafx.com/javafx/10.0.2-internal" fx:controller="Controllers.Dialogs.EditUserDialog">
+    <children>
+        <Label layoutX="117.0" layoutY="14.0" prefHeight="27.0" prefWidth="112.0" text="Edit user info">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Label>
+        <Label layoutX="56.0" layoutY="67.0" text="Name: "/>
+        <Button layoutX="290.0" layoutY="112.0" mnemonicParsing="false" onAction="#saveButtonClicked" text="Save"/>
+        <Button layoutX="229.0" layoutY="112.0" mnemonicParsing="false" onAction="#cancelButtonClicked" text="Cancel"/>
+        <TextField fx:id="name" layoutX="106.0" layoutY="63.0"/>
+    </children>
+</AnchorPane>

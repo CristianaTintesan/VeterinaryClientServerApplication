@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Maven: com.google.protobuf:protobuf-java:3.11.4">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/protobuf/protobuf-java/3.11.4/protobuf-java-3.11.4.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/protobuf/protobuf-java/3.11.4/protobuf-java-3.11.4-javadoc.jar!/" />
+    </JAVADOC>
+    <NATIVE>
+      <root url="file://$USER_HOME$/javafx/javafx-sdk-11.0.2/bin" />
+    </NATIVE>
+    <SOURCES>
+      <root url="file://$USER_HOME$/javafx/javafx-sdk-11.0.2/lib" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/protobuf/protobuf-java/3.11.4/protobuf-java-3.11.4-sources.jar!/" />
+    </SOURCES>
+    <jarDirectory url="file://$USER_HOME$/javafx/javafx-sdk-11.0.2/lib" recursive="false" type="SOURCES" />
+  </library>
+</component>

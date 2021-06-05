@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.BorderPane?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:id="mainFrame" prefHeight="400.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/10.0.2-internal" fx:controller="Controllers.App">
+
+    <center>
+    </center>
+    <top>
+        <ToolBar fx:id="toolbar" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="200.0"
+                 BorderPane.alignment="CENTER">
+            <items>
+                <Button layoutX="10.0" layoutY="13.0" mnemonicParsing="false" onAction="#handleButtonConsultations"
+                        text="Consultations"/>
+                <Button mnemonicParsing="false" onAction="#handleButtonAnimals" text="Animals"/>
+                <Button mnemonicParsing="false" onAction="#handleButtonStock" text="Stock"/>
+                <Button layoutX="72.0" layoutY="13.0" mnemonicParsing="false" onAction="#handleButtonUsers" text="Users"
+                        visible="false"/>
+                <MenuButton fx:id="raports" mnemonicParsing="false" text="Raports" visible="false">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#generatePDF" text="PDF"/>
+                        <MenuItem mnemonicParsing="false" onAction="#generateText" text="Text"/>
+                    </items>
+                </MenuButton>
+            </items>
+        </ToolBar>
+    </top>
+</BorderPane>
